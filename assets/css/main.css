@@ -2235,8 +2235,9 @@
 
 		.image img {
 			border-radius: 0;
-			display: block;
-		}
+      display: block;
+      
+    }
 
 		.image.left, .image.right {
 			max-width: 40%;
@@ -2247,9 +2248,14 @@
 			}
 
 		.image.round img {
-      border-radius: 10px;
+      border-radius: 9px;
       border: 2px solid #8dcca9 ;
-		}
+      transition: transform 0.3s, filter 0.3s;
+    }
+    
+    .image.round img:hover {
+      filter: brightness(90%);
+    }
 
 		.image.left {
 			float: left;
