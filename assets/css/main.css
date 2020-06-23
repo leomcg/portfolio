@@ -3,6 +3,13 @@
 @import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600";
 
 
+.hyphenate {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
 
 #header {
   font-size: 1.1em !important;
@@ -15,18 +22,43 @@
   margin-bottom: 6em;
 }
 
+.contact {
+  font-size: 1.1em;
+}
+
 @media screen and (max-width: 480px) {
   .app-button {
     margin-bottom: 1em;
   }
+  .contact {
+    font-size: 1em;
+  }
+  
 }
 /* Contact */
 .link-icon {
-  display: inline-block !important;
+  display: inline !important;
 }
 
 .contact {
   list-style: none;
+}
+
+.contact p {
+  margin-bottom: 1em;
+}
+
+.contact li {
+  margin-left: 1.2em;
+  margin-right: 1em;
+  padding: 0;
+  max-width: 50em;
+  margin: auto
+}
+
+.contact ul {
+  margin-left: 0 !important;
+  padding: 0 !important;
 }
 
 /* Reset */
@@ -1654,7 +1686,7 @@
 		}
 
 	a {
-		color: #6cc091;
+		color: #FFF;
 		text-decoration: underline;
 	}
 
@@ -2308,7 +2340,7 @@
 	ul {
 		list-style: disc;
 		margin: 0 0 2em 0;
-		padding-left: 1em;
+		padding-left: 0;
 	}
 
 		ul li {
